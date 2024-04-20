@@ -11,6 +11,20 @@ exports.getProducts = (req, res, next) => {
   });
 };
 
+//get single product by id
+
+exports.getProductById = (req, res, next) => {
+  const prodId = req.params.productId;
+  Product.findById(prodId, (product) => {
+    // console.log(product);
+    res.render("shop/product-detail", {
+      prodDetails: product,
+      pageTitle: product.title,
+      path: "/productDetail",
+    });
+  });
+};
+
 //render index page
 exports.getIndex = (req, res, next) => {
   Product.fetchAll((products) => {
