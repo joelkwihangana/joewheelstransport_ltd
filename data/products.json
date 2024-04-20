@@ -1,1 +1,14 @@
-[{"title":"dffsa"},{"title":"Another"},{"title":"fasdfdas"},{"title":"Second Book"},{"title":"pickup"},{"title":"above"}]
+[
+  {
+    "title": "Mahindra",
+    "imageUrl": "https://images.unsplash.com/photo-1703756292790-884c3d635e79?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8",
+    "price": "THis is mahindra fake",
+    "description": "5098"
+  },
+  {
+    "title": "Toyota pickup",
+    "imageUrl": "https://images.pexels.com/photos/220938/pexels-photo-220938.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "price": "This is not my real face!",
+    "description": "5000"
+  }
+]
