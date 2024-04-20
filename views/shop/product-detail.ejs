@@ -5,10 +5,9 @@
 
 <body>
     <%- include('../includes/navigation.ejs') %>
-    <main class="center">
-       
+    <main class="mainProduct">
+        <div class="product-title"> <h2><%= prodDetails.title %></h2></div>
         <div class="product-details">
-            <div class="product-title"> <h2><%= prodDetails.title %></h2></div>
             <div class="product-image"> 
                 <img src=<%= prodDetails.imageUrl %> alt=<%= prodDetails.title %>>
             </div>
@@ -16,5 +15,8 @@
                 <p><%= prodDetails.description %></p>
             </div>
         </div>
+        <form action="/cart" method="post">
+            <button type="submit" class="btn mt">Add to Cart</button>
+        </form>
     </main>
     <%- include('../includes/end.ejs') %>

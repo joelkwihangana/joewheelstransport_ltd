@@ -107,3 +107,28 @@ main {
   background-color: #00695c;
   color: white;
 }
+
+.mainProduct{
+  margin: 0;
+  padding: 2rem;
+  width: 100%;
+}
+.product-details{
+  width: fit-content;
+  max-width: 100%;
+  border:1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.product-details img{
+  width: 400px;
+  max-height: 400px;
+  border-radius: 2.5px;
+}
+
+.mt{
+  margin-top: 0.5rem;
+}

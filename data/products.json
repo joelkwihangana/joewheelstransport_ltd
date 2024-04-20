@@ -1,9 +1,1 @@
-[
-  {
-    "title": "Monkey ",
-    "imageUrl": "https://images.unsplash.com/photo-1703756292790-884c3d635e79?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8",
-    "price": "5678",
-    "description": "This monkey came from Huye!",
-    "id": "0.27691790546584927"
-  }
-]
+[{"title":"Monkey ","imageUrl":"https://images.unsplash.com/photo-1703756292790-884c3d635e79?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8","price":"5678","description":"This monkey came from Huye!","id":"0.27691790546584927"},{"title":"Social Moula","imageUrl":"https://images.pexels.com/photos/220938/pexels-photo-220938.jpeg?auto=compress&cs=tinysrgb&w=600","price":"98","description":"THis is not his real face.\r\nMiddleware: Middleware functions are functions that have access to the request object (req), the response object (res), and the next function in the application’s request-response cycle. Middleware functions can perform various tasks, such as logging, authentication, parsing request bodies, etc.\r\napp.use(): This method is used to mount middleware functions in the Express application. It takes a path and one or more middleware functions as arguments. When a request is made to the server, Express will match the request path with the path specified in app.use() and execute the middleware functions associated with that path.","id":"0.8242832782464826"}]
