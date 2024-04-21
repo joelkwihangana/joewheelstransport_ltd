@@ -13,7 +13,7 @@ exports.getAddProduct = (req, res, next) => {
 //add new product
 exports.postAddProduct = (req, res, next) => {
   const { title, imageUrl, description, price } = req.body;
-  const product = new Product(title, imageUrl, price, description);
+  const product = new Product(null, title, imageUrl, price, description);
   product.save();
   res.redirect("/");
 };
@@ -31,14 +31,37 @@ exports.getProducts = (req, res, next) => {
 };
 
 //edit product
-exports.editProduct = (req, res, next) => {
+exports.getEditProduct = (req, res, next) => {
   const productId = req.params.productId;
 
   Product.findById(productId, (product) => {
+    if (!product) {
+      return res.redirect("/");
+    }
     res.render("admin/edit-product", {
       products: product,
       pageTitle: "Edit Product",
       path: "admin/edit-product",
     });
   });
+};
+
+// Edit product : controller function to save changes | postEditProduct
+exports.saveChanges = (req, res, next) => {
+  const { productId, title, price, imageUrl, description } = req.body;
+  const prodId = productId;
+  const updatedTitle = title;
+  const updatedPrice = price;
+  const updatedImageUrl = imageUrl;
+  const updatedDescription = description;
+
+  const updatedProduct = new Product(
+    prodId,
+    updatedTitle,
+    updatedImageUrl,
+    updatedPrice,
+    updatedDescription
+  );
+  updatedProduct.save();
+  res.redirect("/admin/products");
 };
