@@ -46,12 +46,12 @@ exports.getCart = (req, res, next) => {
 //Add product to cart
 exports.addToCart = (req, res, next) => {
   const prodId = req.body.productId;
-  Product.findById(prodId, (product) => {
-    res.render("shop/cart", {
-      productAdded: product,
-      pageTitle: "View Cart",
-      path: "/shop/cart",
-    });
+  console.log(prodId);
+
+  res.render("shop/cart", {
+    productAdded: prodId,
+    pageTitle: "View Cart",
+    path: "/shop/cart",
   });
 };
 
