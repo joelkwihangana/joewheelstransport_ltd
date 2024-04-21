@@ -98,13 +98,14 @@ main {
     text-decoration: none;
 }
 
-.btn {
+.btn,.card__actions a {
   font: inherit;
   border: 1px solid #00695c;
   color: #00695c;
   background: white;
   border-radius: 3px;
   cursor: pointer;
+  padding: 0.5rem 1rem;
 }
 
 .btn:hover,
