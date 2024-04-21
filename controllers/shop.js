@@ -43,6 +43,16 @@ exports.getCart = (req, res, next) => {
   });
 };
 
+//Add product to cart
+exports.addToCart = (req, res, next) => {
+  const prodId = req.body.productId;
+  Product.findById(prodId, (product) => {
+    res.render("cart", {
+      productAdded: product,
+    });
+  });
+};
+
 exports.getOrders = (req, res, next) => {
   res.render("shop/orders", {
     path: "/orders",

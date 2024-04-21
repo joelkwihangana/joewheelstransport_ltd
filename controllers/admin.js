@@ -29,3 +29,16 @@ exports.getProducts = (req, res, next) => {
     });
   });
 };
+
+//edit product
+exports.editProduct = (req, res, next) => {
+  const productId = req.params.productId;
+
+  Product.findById(productId, (product) => {
+    res.render("admin/edit-product", {
+      products: product,
+      pageTitle: "Edit Product",
+      path: "admin/edit-product",
+    });
+  });
+};
