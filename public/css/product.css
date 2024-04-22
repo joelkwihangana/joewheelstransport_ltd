@@ -6,13 +6,19 @@
 
 .product-item {
     width: 20rem;
+    /* min-width: fit-content; */
     max-width: 95%;
+    word-wrap: break-word;
+    
 }
-
 .product__title {
     font-size: 1.2rem;
     text-align: center;
+    display: flex;
+    width: 100%;
 }
+
+
 
 .product__price {
     text-align: center;
@@ -22,4 +28,5 @@
 
 .product__description {
     text-align: center;
+
 }
