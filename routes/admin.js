@@ -21,4 +21,7 @@ router.post("/save-changes", adminController.saveChanges);
 // /admin/add-product => POST
 router.post("/add-product", adminController.postAddProduct);
 
+//delete product
+router.post("/delete-product", adminController.postDeleteProduct);
+
 module.exports = router;
